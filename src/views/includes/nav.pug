@@ -1,0 +1,9 @@
+- var pages = ['Home', 'About', 'Shop', 'Contact'];
+
+ul.navLinks
+    each val in pages
+        li.navLink
+            button.page(id=val data-hover=val onclick="window.location.href='/"+val+"'")
+                a.action= val
+            div.navExpanded(id=val+"-submenu_hover")
+                p= val

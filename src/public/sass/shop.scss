@@ -1,0 +1,59 @@
+@import "utilities/imports.scss";
+
+#productList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.product {
+    width: 30%;
+    margin: 4px;
+    padding: 10px;
+    transition: .3s ease all;
+    z-index: 2;
+    &:hover {
+        box-shadow: 4px 4px 0px $pink;
+        transform: translate(-2px, -2px);
+    }
+    .product-title {
+        color: $black;
+        font-size: 30px;
+    }
+    .product-img {
+        width: 75%;
+        margin: 0 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .product-description {
+
+    }
+    .product-price {
+        color: $purple;
+        &:before {
+            content: "$";
+        }
+    }
+    .product-actions {
+        height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+            box-shadow: $shadow $pink;
+            color: $pink;
+            background: $white;
+            text-decoration: none;
+            padding: 10px 15px;
+            transition: .3s ease all;
+            &:hover {
+                color: $purple;
+                box-shadow: $shadow $purple;
+                transform: scaleX(1.05);
+            }
+        }
+    }
+}

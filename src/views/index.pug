@@ -1,0 +1,30 @@
+include ./includes/head.pug
+body
+    include ./includes/header.pug
+    div.wrapper#index-container
+        div.jumbotron
+            img.home-img(src="/pics/home-banner.jpg" alt="Twisted Boutique")
+        div.home-section#top-rated
+            div.split-home#top-split
+                h1.slideRight #1 Rated Boutique in Ramsey
+                img.slideLeft(src="/pics/productPhotos/twins-scrunchie.jpg" alt="Top Rated")
+        div.home-section#featured-products
+            div.featured-products 
+                div.product
+                    h1.product-title Zipper Pouch - 
+                        span.product-price 8
+                    div.product-img
+                        img(src="/pics/productPhotos/IMG_2092.jpg")
+                div.product
+                    h1.product-title Zipper Pouch - 
+                        span.product-price 8
+                    div.product-img
+                        img(src="/pics/productPhotos/IMG_2092.jpg")
+                div.product
+                    h1.product-title Zipper Pouch - 
+                        span.product-price 8
+                    div.product-img
+                        img(src="/pics/productPhotos/IMG_2092.jpg")
+        div.home-section#view-collection
+            h1 Are you ready to twist it up?
+            a.home-action(href="/shop") See the Collection

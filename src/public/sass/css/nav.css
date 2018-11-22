@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:700|Open+Sans+Condensed:300");
+@keyframes navSubOpen {
+  from {
+    height: 0px; }
+  to {
+    height: 200px; } }
+
+@keyframes navSubClose {
+  from {
+    height: 200px; }
+  to {
+    height: 0px; } }
+
+.sticky-top {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+  .sticky-top .navLinks {
+    margin-top: 0px !important; }
+
+.nav {
+  width: 100%;
+  background-color: #FEFEFE;
+  height: 80px;
+  z-index: 10;
+  text-align: center;
+  transition: 1.5s ease all; }
+  .nav svg {
+    height: 65px;
+    position: absolute;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    animation: none;
+    transition: 1.0s ease all;
+    transform: translateX(-125%);
+    z-index: 20; }
+    .nav svg path {
+      fill: #7B4389; }
+
+.navLinks {
+  list-style-type: none;
+  height: 75px;
+  border-top: 2px solid #FFA3F2;
+  border-bottom: 2px solid #FFA3F2;
+  z-index: 10; }
+
+.navLink {
+  display: inline-block;
+  padding: 5px 10px;
+  min-width: 100px;
+  z-index: 9;
+  text-align: center; }
+
+.submenu_hover {
+  width: 100%;
+  height: 50px;
+  background-color: #FFA3F2; }
+
+.page {
+  background: transparent;
+  outline: none;
+  border: 0px transparent;
+  position: relative;
+  padding: 15px 30px;
+  overflow: hidden;
+  border: 2px solid #7B4389;
+  box-shadow: 7px 7px 0px 0px #7B4389;
+  transition: all .3s ease; }
+  .page .action {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 1.6em;
+    transition: all 0.3s ease-in-out;
+    color: #7B4389; }
+  .page:before {
+    content: attr(data-hover);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 800;
+    font-size: 1.6em;
+    opacity: 0;
+    transform: translate(0, 100%);
+    transition: all 0.3s ease-in-out;
+    z-index: 3; }
+  .page:hover {
+    cursor: pointer;
+    border: 2px solid #FFA3F2;
+    box-shadow: 7px 7px 0px 0px #FFA3F2; }
+    .page:hover .action {
+      opacity: 0;
+      transform: translate(0, -100%);
+      z-index: 2; }
+    .page:hover:before {
+      opacity: 1;
+      color: #FFA3F2;
+      transform: translate(0, 0); }
+
+.navExpanded {
+  position: absolute;
+  background-color: #FFA3F2;
+  width: 100%;
+  height: 0px;
+  left: 0;
+  margin-top: 10px;
+  z-index: 2;
+  overflow: hidden; }
+  .navExpanded p {
+    font-size: 26px;
+    color: #FEFEFE; }

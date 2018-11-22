@@ -1,0 +1,16 @@
+include ./includes/head.pug
+body
+    include ./includes/header.pug
+    div.wrapper#contact-container
+        form#contact-form.small-form
+            div.small-form-wrap
+                fieldset.small-field
+                    div.form-input
+                        label(for="Name")= "Name"
+                        input#name(type="text" name="Name" value="")
+                    div.form-input
+                        label(for="Email")= "Email"
+                        input#email(type="email" name="email" value="")
+                    div.form-input
+                        label(for="Message")= "Message"
+                        textarea#email(name="Message" value="")

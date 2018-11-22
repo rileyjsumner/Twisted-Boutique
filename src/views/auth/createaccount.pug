@@ -1,0 +1,31 @@
+include ../includes/head.pug
+body
+    include ../includes/header.pug
+    div.wrapper#login
+        form.long-form#login-form(method="POST" action="/Auth/CreateAccount")
+            div.long-form-wrap
+                fieldset.long-field
+                    label(for="email") Email
+                    input(type="email" name="email" id="email")
+                fieldset.long-field 
+                    label(for="address-1") Address Line 1
+                    input(type="text" name="address-1" id="address-1")
+                fieldset.long-field 
+                    label(for="phone") Phone Number 
+                    input(type="text" name="phone" id="phone")
+                fieldset.long-field 
+                    label(for="address-2") Address Line 2
+                    input(type="text" name="address-2" id="address-2")
+                fieldset.long-field
+                    label(for="password") Password
+                    input(type="password" name="password" id="password")
+                fieldset.long-field 
+                    label(for="city") City
+                    input(type="text" name="city" id="city")
+                fieldset.long-field
+                    label(for="confirm") Confirm Password 
+                    input(type="password" name="confirm" id="confirm")
+                fieldset.long-field 
+                    label(for="state") State
+                    input(type="text" name="state" id="state")
+                button(type="submit") Create Account

@@ -1,0 +1,35 @@
+include ../includes/head.pug
+body
+    include ../includes/header.pug
+    div.wrapper#new-product-container
+        div#new-product
+            form.form#new-product-form(method= 'POST' action='../API/NewProduct')
+                div.input-box
+                    label.label(for='title') Title
+                    input.input(id='title' type='text' name='title' value='')
+                div.input-box
+                    label.label(for='price') Price
+                    input.input(id='price' type='number' name='price' value='')
+                div.input-box
+                    label.label(for='description') Description
+                    textarea.input.longtext(id='description' name='description')
+                div.input-box
+                    label.label(for='weight') Weight
+                    input.input(id='weight' type='number' name='weight')
+                div.input-box
+                    label.label(for='width') Width
+                    input.input(id='width' type='number' name='width')
+                div.input-box
+                    label.label(for='height') Height
+                    input.input(id='height' type='number' name='height')
+                div.input-box
+                    label.label(for='depth') Depth
+                    input.input(id='depth' type='number' name='depth')
+                div.input-box
+                    input.input(id='solid' type='radio' name='fabric' value='Solid')
+                    label.label.radio(for='solid') Solid
+                    input.input(id='pattern' type='radio' name='fabric' value='Pattern')
+                    label.label.radio(for='pattern') Pattern
+                div.input-box
+                    input.input(id='design' type='text' name='design')
+                input.btn(id='add_prduct' type='submit' name='Add Product' value='Add Product')

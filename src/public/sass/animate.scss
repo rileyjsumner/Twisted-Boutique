@@ -1,0 +1,8 @@
+.slideLeft {
+    transition: 1.5s ease all;
+    transform: translateX(25%);
+}
+.slideRight {
+    transition: 1.5s ease all;
+    transform: translateX(-25%);
+}

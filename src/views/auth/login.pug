@@ -1,0 +1,13 @@
+include ../includes/head.pug
+body
+    include ../includes/header.pug
+    div.wrapper#login
+        form.small-form#login-form(method="POST" action="/Auth/Login")
+            div.small-form-wrap
+                fieldset.small-field
+                    label(for="email") Email
+                    input(type="email" name="email" id="email")
+                fieldset.small-field
+                    label(for="password") Password
+                    input(type="password" name="password" id="password")
+                button(type="submit") Login

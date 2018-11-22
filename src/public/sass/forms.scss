@@ -1,0 +1,176 @@
+@import "utilities/imports.scss";
+
+.design {
+    background-color: blue;
+}
+#design_tagsinput {
+    margin: 0 auto;
+}
+#design_tag {
+    width: 265px;
+}
+div.tagsinput {
+    height: 50px;
+
+    span.tag {
+        background-color: $pink;
+        border: 1px solid $bright-pink;
+        color: $white;
+
+        a {
+            color: $bright-pink;
+        }
+    }
+}
+.not_valid {
+    background: red !important;
+    color: $white !important;
+    width: auto !important;
+}
+.input-box {
+    display: block;
+    .label {
+        &:after {
+            content: ": ";
+        }
+        &.radio:after {
+            content: "";
+        }
+        width: 60px;
+    }
+    .input {
+        &[type="number"] {
+            width: 40px;
+        }
+        &[type="text"] {
+            width: 120px;
+        }
+    }
+}
+.long-form {
+    width: 900px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: $grey;
+    box-shadow: $shadow $dark-grey;
+    margin: 0 auto;
+    margin-top: 70px;
+    .long-form-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        .long-field {
+            width: 45%;
+            border: 0px;
+            &:nth-child(odd) {
+                align-self: flex-end;
+            }
+            &:nth-child(even) {
+                align-self: flex-start;
+            }
+            &:last-child {
+                align-self: center;
+            }
+            input {
+                box-shadow: $shadow $pink;
+                border: 0px;
+                height: 24px;
+                width: 100%;
+                &:focus {
+                    outline-color: $pink;
+                }
+            }
+            label {
+                font-size: 24px;
+                &:after {
+                    content: ": ";
+                }
+            }
+        }
+    }
+}
+.small-form {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background: $grey;
+    margin-top: 70px;
+    box-shadow: $shadow $dark-grey;
+    .admin-action {
+        width: 75%;
+        color: $pink;
+        background-color: $white;
+        box-shadow: $shadow $pink;
+        text-decoration: none;
+        transition: .3s ease all;
+        &:hover {
+            box-shadow: $shadow $purple;
+            color: $purple;
+        }
+    }
+    .small-form-wrap {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        .small-field {
+            display: flex;
+            border: 0px;
+            width: 100%;
+            margin: 10px;
+            input {
+                height: 28px;
+                box-shadow: $shadow $pink;
+                border: 0px;
+                width: 100%;
+                margin: 10px 0px;
+                &:focus {
+                    outline-color: $pink;
+                }
+            }
+            textarea {
+                box-shadow: $shadow $pink;
+                width: 100%;
+                height: 100px;
+                margin: 10px 0px;
+                border: 0px;
+                &:focus {
+                    outline-color: $pink;
+                }
+            }
+            label {
+                font-size: 24px;
+                min-width: 30%;
+                &:after {
+                    content: ": ";
+                }
+            }
+        }
+        button {
+            text-align: center;
+            margin: 0 auto;
+            width: 50%;
+            height: 25px;
+            background: $white;
+            color: $pink;
+            box-shadow: $shadow $pink;
+            transition: .3s ease all;
+            margin-top: 25px;
+            border: 0px;
+            &:hover {
+                color: $purple;
+                box-shadow: $shadow $purple;
+                transform: scaleX(1.05);
+            }
+        }
+    }
+}

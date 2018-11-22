@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:700|Open+Sans+Condensed:300");
+.design {
+  background-color: blue; }
+
+#design_tagsinput {
+  margin: 0 auto; }
+
+#design_tag {
+  width: 265px; }
+
+div.tagsinput {
+  height: 50px; }
+  div.tagsinput span.tag {
+    background-color: #FFA3F2;
+    border: 1px solid #FF0A47;
+    color: #FEFEFE; }
+    div.tagsinput span.tag a {
+      color: #FF0A47; }
+
+.not_valid {
+  background: red !important;
+  color: #FEFEFE !important;
+  width: auto !important; }
+
+.input-box {
+  display: block; }
+  .input-box .label {
+    width: 60px; }
+    .input-box .label:after {
+      content: ": "; }
+    .input-box .label.radio:after {
+      content: ""; }
+  .input-box .input[type="number"] {
+    width: 40px; }
+  .input-box .input[type="text"] {
+    width: 120px; }
+
+.long-form {
+  width: 900px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #E5E3E5;
+  box-shadow: 7px 7px 0px 0px #9A9A9A;
+  margin: 0 auto;
+  margin-top: 70px; }
+  .long-form .long-form-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%; }
+    .long-form .long-form-wrap .long-field {
+      width: 45%;
+      border: 0px; }
+      .long-form .long-form-wrap .long-field:nth-child(odd) {
+        align-self: flex-end; }
+      .long-form .long-form-wrap .long-field:nth-child(even) {
+        align-self: flex-start; }
+      .long-form .long-form-wrap .long-field:last-child {
+        align-self: center; }
+      .long-form .long-form-wrap .long-field input {
+        box-shadow: 7px 7px 0px 0px #FFA3F2;
+        border: 0px;
+        height: 24px;
+        width: 100%; }
+        .long-form .long-form-wrap .long-field input:focus {
+          outline-color: #FFA3F2; }
+      .long-form .long-form-wrap .long-field label {
+        font-size: 24px; }
+        .long-form .long-form-wrap .long-field label:after {
+          content: ": "; }
+
+.small-form {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  background: #E5E3E5;
+  margin-top: 70px;
+  box-shadow: 7px 7px 0px 0px #9A9A9A; }
+  .small-form .admin-action {
+    width: 75%;
+    color: #FFA3F2;
+    background-color: #FEFEFE;
+    box-shadow: 7px 7px 0px 0px #FFA3F2;
+    text-decoration: none;
+    transition: .3s ease all; }
+    .small-form .admin-action:hover {
+      box-shadow: 7px 7px 0px 0px #7B4389;
+      color: #7B4389; }
+  .small-form .small-form-wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center; }
+    .small-form .small-form-wrap .small-field {
+      display: flex;
+      border: 0px;
+      width: 100%;
+      margin: 10px; }
+      .small-form .small-form-wrap .small-field input {
+        height: 28px;
+        box-shadow: 7px 7px 0px 0px #FFA3F2;
+        border: 0px;
+        width: 100%;
+        margin: 10px 0px; }
+        .small-form .small-form-wrap .small-field input:focus {
+          outline-color: #FFA3F2; }
+      .small-form .small-form-wrap .small-field textarea {
+        box-shadow: 7px 7px 0px 0px #FFA3F2;
+        width: 100%;
+        height: 100px;
+        margin: 10px 0px;
+        border: 0px; }
+        .small-form .small-form-wrap .small-field textarea:focus {
+          outline-color: #FFA3F2; }
+      .small-form .small-form-wrap .small-field label {
+        font-size: 24px;
+        min-width: 30%; }
+        .small-form .small-form-wrap .small-field label:after {
+          content: ": "; }
+    .small-form .small-form-wrap button {
+      text-align: center;
+      margin: 0 auto;
+      width: 50%;
+      height: 25px;
+      background: #FEFEFE;
+      color: #FFA3F2;
+      box-shadow: 7px 7px 0px 0px #FFA3F2;
+      transition: .3s ease all;
+      margin-top: 25px;
+      border: 0px; }
+      .small-form .small-form-wrap button:hover {
+        color: #7B4389;
+        box-shadow: 7px 7px 0px 0px #7B4389;
+        transform: scaleX(1.05); }
